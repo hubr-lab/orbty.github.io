@@ -4,7 +4,7 @@ body {
 }
 
 body {
-	background-color: #1b2832;
+	background-color: rgba(33, 46, 59, 1);
 	overflow-x: hidden;
 	position: relative;
 }
@@ -89,7 +89,7 @@ body {
 	left: 75px;
 	width: 550px;
 	height: 550px;
-	border: 2px #ffffff12 dashed;
+	border: 2px #ffffff17 dashed;
 	border-radius: 100%;
 	-webkit-animation: right-spinning 10s linear infinite;
 	animation: right-spinning 10s linear infinite;
@@ -111,7 +111,7 @@ body {
 	left: 35px;
 	width: 700px;
 	height: 700px;
-	border: 2px #ffffff12 dashed;
+	border: 2px #ffffff17 dashed;
 	border-radius: 100%;
 	-webkit-animation: right-spinning 15s linear infinite;
 	animation: right-spinning 15s linear infinite;
@@ -124,7 +124,7 @@ body {
 	height: 20px;
 	width: 20px;
 	border-radius: 100%;
-	background-color: #ffffffb0;
+	background-color: rgba(74, 147, 170, 1);
 }
 
 #outer-orbit {
@@ -133,7 +133,7 @@ body {
 	left: 0;
 	width: 1000px;
 	height: 1000px;
-	border: 2px #ffffff12 dashed;
+	border: 2px #ffffff17 dashed;
 	border-radius: 100%;
 	-webkit-animation: right-spinning 20s linear infinite;
 	animation: right-spinning 20s linear infinite;
@@ -171,11 +171,19 @@ span.about code {
 	display: block;
 	background: #060d11;
 	padding: 17px;
-	width: 300px;
+	width: 290px;
 	top: 20px;
 	text-transform: lowercase;
 	border-radius: 5px;
 	font-size: 11pt;
+	font-family: 'Fira Mono', monospace;
+}
+
+span.about code .no-code {
+	user-select: none;
+	font-size: 10.2pt;
+	opacity: .8;
+	color: #8e9dac;
 }
 
 @-webkit-keyframes right-spinning {
@@ -186,6 +194,10 @@ span.about code {
 		-o-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
+}
+
+.tag-info .docs {
+	font-size: 12px;
 }
 
 .tag-info .docs a {
