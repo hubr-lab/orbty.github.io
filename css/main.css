@@ -154,9 +154,10 @@ body {
 	width: 231px;
 	float: right;
 	right: 7em;
+	user-select: none;
 }
 
-span.about {
+.about {
 	position: absolute;
 	display: block;
 	top: 0;
@@ -166,7 +167,7 @@ span.about {
 	padding: 70px 51px;
 }
 
-span.about code {
+.about code {
 	position: relative;
 	display: block;
 	background: #060d11;
@@ -177,9 +178,10 @@ span.about code {
 	border-radius: 5px;
 	font-size: 11pt;
 	font-family: 'Fira Mono', monospace;
+	color: white;
 }
 
-span.about code .no-code {
+.about code .no-code {
 	user-select: none;
 	font-size: 10.2pt;
 	opacity: .8;
@@ -203,6 +205,12 @@ span.about code .no-code {
 .tag-info .docs a {
 	text-decoration: none;
 	color: white;
+}
+
+span.about-message {
+    display: block;
+	font-size: 12pt;
+	user-select: none;
 }
 
 @media screen and (max-width: 768px) {
